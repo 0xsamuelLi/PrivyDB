@@ -1,0 +1,80 @@
+.document-app {
+  min-height: 100vh;
+  background: #f9fafb;
+}
+
+.document-main {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contract-panel {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 40px rgba(15, 23, 42, 0.08);
+}
+
+.contract-label {
+  display: block;
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 0.35rem;
+}
+
+.contract-input {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  border: 1px solid #e5e7eb;
+  font-size: 0.95rem;
+}
+
+.contract-hint {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.contract-hint.success {
+  color: #10b981;
+}
+
+.contract-hint.warning {
+  color: #f97316;
+}
+
+.document-tabs {
+  display: flex;
+  gap: 1rem;
+  background: #e5e7eb;
+  border-radius: 9999px;
+  padding: 0.5rem;
+}
+
+.document-tab {
+  flex: 1;
+  border: none;
+  border-radius: 9999px;
+  padding: 0.75rem 1rem;
+  background: transparent;
+  font-weight: 600;
+  cursor: pointer;
+  color: #6b7280;
+  transition: all 0.2s ease-in-out;
+}
+
+.document-tab.active {
+  background: white;
+  color: #111827;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+@media (min-width: 768px) {
+  .document-main {
+    padding: 2.5rem 2rem 4rem;
+  }
+}
